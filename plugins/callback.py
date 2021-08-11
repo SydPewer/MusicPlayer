@@ -1,6 +1,7 @@
 #MIT License
 
-#Copyright (c) 2021 SUBIN
+#Copyright (c) 2021 SYD
+
 
 #Permission is hereby granted, free of charge, to any person obtaining a copy
 #of this software and associated documentation files (the "Software"), to deal
@@ -69,7 +70,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     admins = await mp.get_admins(Config.CHAT)
     if query.from_user.id not in admins and query.data != "help":
         await query.answer(
-            "😒 Played Joji.mp3",
+            "▶️ Played Joji.mp3",
             show_alert=True
             )
         return
@@ -174,12 +175,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="help":
         buttons = [
             [
-                InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),
-                InlineKeyboardButton('🤖 Other Bots', url='https://t.me/subin_works/122'),
+                InlineKeyboardButton('👥 Group', url='https://t.me/unique_sub4sub'),
+                InlineKeyboardButton('🤖 More Bots', url='https://t.me/subin_works/122'),
             ],
             [
-                InlineKeyboardButton('👨🏼‍💻 Developer', url='https://t.me/subinps'),
-                InlineKeyboardButton('🧩 Source', url='https://github.com/subinps/MusicPlayer'),
+                InlineKeyboardButton('👤 Dev', url='https://t.me/sydpewer'),
+                InlineKeyboardButton('🧩 Source', url='https://github.com/SydPewer/MusicPlayer'),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
