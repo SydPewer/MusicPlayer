@@ -1,6 +1,6 @@
 #MIT License
 
-#Copyright (c) 2021 SUBIN
+#Copyright (c) 2021 SYD
 
 #Permission is hereby granted, free of charge, to any person obtaining a copy
 #of this software and associated documentation files (the "Software"), to deal
@@ -30,12 +30,12 @@ ADMINS=Config.ADMINS
 @Client.on_message(filters.command(["radio", f"radio@{USERNAME}"]) & filters.user(ADMINS) & (filters.chat(CHAT) | filters.private))
 async def radio(client, message: Message):
     if 1 in RADIO:
-        k=await message.reply_text("Kindly stop existing Radio Stream /stopradio")
+        k=await message.reply_text("⭕ Stop Existing Radio By /stopradio")
         await mp.delete(k)
         await mp.delete(message)
         return
     await mp.start_radio()
-    k=await message.reply_text(f"Started Radio: <code>{STREAM}</code>")
+    k=await message.reply_text(f"Radio Started 📻: <code>{STREAM}</code>")
     await mp.delete(k)
     await mp.delete(message)
 
@@ -47,6 +47,6 @@ async def stop(_, message: Message):
         await mp.delete(message)
         return
     await mp.stop_radio()
-    k=await message.reply_text("Radio stream ended.")
+    k=await message.reply_text("Radio stream ended 🔚.")
     await mp.delete(k)
     await mp.delete(message)
