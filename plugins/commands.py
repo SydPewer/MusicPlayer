@@ -29,7 +29,7 @@ msg=Config.msg
 HOME_TEXT = "<b>Helo, [{}](tg://user?id={})\n\nIam MusicPlayer 2.0 which plays music in Channels and Groups 24*7.\n\nI can even Stream Youtube Live in Your Voicechat.\n\nDeploy Your Own bot from source code below.\n\nHit /help to know about available commands.</b>"
 HELP = """
 
-<b>Add the bot and User account in your Group with admin rights.
+<b>For Using Me.Make Me and @SydPewer As Admin in your group.
 
 Start a VoiceChat.
 
@@ -69,12 +69,12 @@ You can also use /dplay <song name> to play a song from Deezer.</b>
 async def start(client, message):
     buttons = [
         [
-        InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),
-        InlineKeyboardButton('🤖 Other Bots', url='https://t.me/subin_works/122'),
+        InlineKeyboardButton('🎁 Group', url='https://t.me/unique_sub4sub'),
+        InlineKeyboardButton('🤖 Botz', url='https://t.me/subin_works/122'),
     ],
     [
-        InlineKeyboardButton('👨🏼‍💻 Developer', url='https://t.me/subinps'),
-        InlineKeyboardButton('🧩 Source', url='https://github.com/subinps/MusicPlayer'),
+        InlineKeyboardButton('👤 Dev', url='https://t.me/Syd_Pewer'),
+        InlineKeyboardButton('🧩 Source', url='https://github.com/SydPewer/MusicPlayer'),
     ],
     [
         InlineKeyboardButton('👨🏼‍🦯 Help', callback_data='help'),
@@ -92,12 +92,12 @@ async def start(client, message):
 async def show_help(client, message):
     buttons = [
         [
-            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),
-            InlineKeyboardButton('🤖 Other Bots', url='https://t.me/subin_works/122'),
+            InlineKeyboardButton('👥 Group', url='https://t.me/unique_sub4sub'),
+            InlineKeyboardButton('🤖 More Bots', url='https://t.me/subin_works/122'),
         ],
         [
-            InlineKeyboardButton('👨🏼‍💻 Developer', url='https://t.me/subinps'),
-            InlineKeyboardButton('🧩 Source', url='https://github.com/subinps/MusicPlayer'),
+            InlineKeyboardButton('👤 Dev', url='https://t.me/Syd_Pewer'),
+            InlineKeyboardButton('🧩 Source', url='https://github.com/SydPewer/MusicPlayer'),
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
